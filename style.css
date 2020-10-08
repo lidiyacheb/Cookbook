@@ -1,3 +1,18 @@
+html {
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrap {
+    background-image: url('./images/bg.jpg');
+    padding-top: 5rem;
+    padding-bottom: 12rem;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
 .footer {
     height: 100px;
     width: 100%;
@@ -6,3 +21,79 @@
     text-align: center;
 
   }
+
+.navbar-top {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: normal;
+    color: #684f40 !important;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    box-shadow: 0 4px 2px -2px grey;
+    background-color: #dff1d9 !important;
+}
+
+.search {
+    background-image: url('https://3hywdj13z8cdwz0r92br9l51-wpengine.netdna-ssl.com/food-demo/wp-content/uploads/sites/2/2016/01/v_header_.jpg');
+    background-size: cover;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 4px 2px -2px grey;
+}
+
+.carousel-inner .carousel-item {
+    height: 600px;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.carousel-inner .carousel-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2b2b28;
+    opacity: 0.3;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 5;
+}
+
+.carousel-caption h1 {
+    text-shadow: rgba(0, 0, 0, 0.5) -1px 1px 0, rgba(0, 0, 0, 0.4) -2px 2px 0,
+        rgba(0, 0, 0, 0.3) -3px 3px 0, rgba(0, 0, 0, 0.2) -4px 4px 0,
+        rgba(0, 0, 0, 0.2) -5px 5px 0, rgba(0, 0, 0, 0.2) -6px 6px 0,
+        rgba(0, 0, 0, 0.2) -7px 7px 0, rgba(0, 0, 0, 0.1) -8px 8px 0,
+        rgba(0, 0, 0, 0.1) -9px 9px 0, rgba(0, 0, 0, 0.1) -10px 10px 0,
+        rgba(0, 0, 0, 0.1) -11px 11px 0, rgba(0, 0, 0, 0.1) -12px 12px 0,
+        rgba(0, 0, 0, 0.1) -12px 12px 10px;
+}
+
+.card-button {
+    background-color: #ec6f78;
+    border: 1px solid #ec6f78;
+}
+
+.card-button:hover {
+    background-color: white;
+    color: #ec6f78;
+    border: 1px solid #ec6f78;
+}
+
+@media (max-width: 575px) {
+    .carousel-inner .carousel-item {
+        height: 250px;
+        background-size: cover;
+        background-position: center center;
+    }
+}
