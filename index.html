@@ -1,267 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cookbook Project</title>
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <!--Header Section-->
-        <div
-            class="search col d-flex align-items-center justify-content-center"
-        >
-            <div class="search-logo">
-                <img class="text-center" src="./images/logo-def.png" alt="" />
-            </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookbook Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header Section-->
+    <div class="search col d-flex align-items-center justify-content-center">
+        <div class="search-logo">
+            <img class="text-center" src="./images/logo-def.png" alt="" />
         </div>
+    </div>
 
-        <!--Navbar Section-->
-        <nav
-            class="navbar navbar-top navbar-expand-lg navbar-light bg-white justify-content-center"
-        >
-            <a class="navbar-brand"></a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav m-auto">
-                    <li class="nav-item active pr-5">
-                        <a class="nav-link" href="index.html"
-                            >Home <span class="sr-only">(current)</span></a
-                        >
-                    </li>
-                    <li class="nav-item pr-5">
-                        <a class="nav-link" href="#">Recipes</a>
-                    </li>
-                    <li class="nav-item pr-5">
-                        <a class="nav-link" href="#">Favorite</a>
-                    </li>
-                    <li class="nav-item pr-5">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!--Carousel section-->
-        <div
-            id="carouselExampleControls"
-            class="carousel slide mt-1"
-            data-ride="carousel"
-        >
-            <div class="carousel-inner">
-                <div
-                    class="carousel-item active"
-                    style="background-image: url(./images/smoothie.jpg)"
-                >
-                    <div class="carousel-caption text-center">
-                        <h1>Unmatched quality.</h1>
-                        <h1>Unbeatable flavour. Amazing!</h1>
-                    </div>
-                </div>
-
-                <div
-                    class="carousel-item"
-                    style="background-image: url(./images/lark.jpg)"
-                >
-                    <div class="container">
-                        <div class="carousel-caption text-center">
-                            <h1>Unmatched quality.</h1>
-                            <h1>Unbeatable flavour. Amazing!</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <div
-                    class="carousel-item"
-                    style="background-image: url(./images/brooke-.jpg)"
-                >
-                    <div
-                        class="carousel-caption text-center justify-content-center"
-                    >
-                        <h1>Unmatched quality.</h1>
-                        <h1>Unbeatable flavour. Amazing!</h1>
-                    </div>
-                </div>
-            </div>
-            <a
-                class="carousel-control-prev"
-                href="#carouselExampleControls"
-                role="button"
-                data-slide="prev"
-            >
-                <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                ></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a
-                class="carousel-control-next"
-                href="#carouselExampleControls"
-                role="button"
-                data-slide="next"
-            >
-                <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                ></span>
-                <span class="sr-only">Next</span>
-            </a>
+    <!--Navbar Section-->
+    <nav class="navbar navbar-top navbar-expand-lg navbar-light bg-white justify-content-center">
+        <!--Navbar Social Media-->
+        <div class="container sidebar d-none d-lg-block">
+            <div class="row sidebarSocial justify-content-end align-items-center">
+                <span class="fa fa-twitter" target="_blank"></span>
+                <span class="fa fa-pinterest" target="_blank"></span>
+                <span class="fa fa-instagram" target="_blank"></span>
+                <span class="fa fa-facebook-f" target="_blank"></span>
+                <span class="fa fa-envelope" target="_blank"></span>
+                <span class="fa fa-heart" target="_blank"></span></div>
         </div>
+        </div>
+        <a class="navbar-brand"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item active pr-5">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item pr-5">
+                    <a class="nav-link nav-color" href="#">Recipes</a>
+                </li>
+                <li class="nav-item  pr-5">
+                    <a class="nav-link nav-color" href="#">Favorite</a>
+                </li>
+                <li class="nav-item pr-5">
+                    <a class="nav-link nav-color" href="#">Contact</a>
+                </li>
+            </ul>
+    </nav>
+    <!--Carousel section-->
+    <div id="carouselExampleControls" class="carousel slide mt-1" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url(./images/smoothie.jpg)">
+                <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center">
+                    <h1 class="carousel-text">Red Berry Oat Muffin</h1>
+                    <h1 class="carousel-text">Unbeatable flavour. Amazing!</h1>
+                </div>
+            </div>
 
-        <div class="carousel-inner" role="listbox">
-            <!--Cards section-->
-            <div class="wrap">
-                <h2 class="main-title text-center mb-3 text-uppercase">
-                    Most favorite recipes
-                </h2>
+            <div class="carousel-item" style="background-image: url(./images/lark.jpg)">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-3" style="float: left">
-                            <div class="card">
-                                <img
-                                    class="card-img-top"
-                                    src="./images/tacos.png"
-                                    alt="Card image cap"
-                                />
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">
-                                        Breakfast
-                                    </h4>
-                                    <p class="card-text text-justify">
-                                      Some quick example text to build on the
-                                        card title and make up the bulk of the
-                                        card's content.
-                                    </p>
-                                    <a href="index0.html"
-                                        class="btn btn-primary card-button d-block m-auto"
-                                        >Read more</a
-                                    >
-                                </div>
+                    <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center">
+                        <h1 class="carousel-text">Unmatched quality.</h1>
+                        <h1 class="carousel-text">Unbeatable flavour. Amazing!</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" style="background-image: url(./images/brooke-.jpg)">
+                <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center">
+                    <h1 class="carousel-text">Unmatched quality.</h1>
+                    <h1 class="carousel-text">Unbeatable flavour. Amazing!</h1>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="carousel-inner" role="listbox">
+        <!--Cards section-->
+        <div class="wrap container-fluid full">
+            <div class="section-icon d-flex justify-content-center mb-3">
+                <img src="./images/icon4.png" alt="">
+            </div>
+            <h2 class="main-title title-text text-center text-uppercase">
+                Amazing Health Solution
+            </h2>
+            <h2 class="main-title title-text text-center text-uppercase mb-5">
+                Whatever you need
+            </h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 m-b-xs" style="float: left">
+                        <div class="card mb-3">
+                            <img class="card-img-top" src="./images/ella.jpg" alt="Card image cap" />
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    Breakfast
+                                </h4>
+                                <p class="card-text text-justify">
+                                    Plant-based vegan dish recipes can be just
+                                    as ooey-gooey as the classics yo‚u may have grown up eating.
+                                </p>
+                                <a class="btn btn-primary card-button d-block m-auto">Read more</a>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-md-3" style="float: left">
-                            <div class="card">
-                                <img
-                                    class="card-img-top"
-                                    src="./images/tacos.png"
-                                    alt="Card image cap"
-                                />
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">
-                                        Lunch
-                                    </h4>
-                                    <p class="card-text text-justify">
-                                        Some quick example text to build on the
-                                        card title and make up the bulk of the
-                                        card's content.
-                                    </p>
-                                    <a href="index1.html"
-                                        class="btn btn-primary card-button d-block m-auto"
-                                        >Read more</a
-                                    >
-                                </div>
+                    <div class="col-md-3 m-b-xs" style="float: left">
+                        <div class="card mb-3 shadow-lg">
+                            <img class="card-img-top" src="./images/salat.png" alt="Card image cap" />
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    Lunch
+                                </h4>
+                                <p class="card-text text-justify">
+                                    Plant-based vegan dish recipes can be just
+                                    as ooey-gooey as the classics you may have grown up eating.
+                                </p>
+                                <a class="btn btn-primary card-button d-block m-auto">Read more</a>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-md-3" style="float: left">
-                            <div class="card">
-                                <img
-                                    class="card-img-top"
-                                    src="./images/tacos.png"
-                                    alt="Card image cap"
-                                />
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">
-                                        Dinner
-                                    </h4>
-                                    <p class="card-text text-justify">
-                                        Some quick example text to build on the
-                                        card title and make up the bulk of the
-                                        card's content.
-                                    </p>
-                                    <a href="index2.html"
-                                        class="btn btn-primary card-button d-block m-auto"
-                                        >Read more</a
-                                    >
-                                </div>
+                    <div class="col-md-3 m-b-xs" style="float: left">
+                        <div class="card mb-3">
+                            <img class="card-img-top" src="./images/taco-veg.png" alt="Card image cap" />
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    Dinner
+                                </h4>
+                                <p class="card-text text-justify">
+                                    Plant-based vegan dish recipes can be just
+                                    as ooey-gooey as the classics you may have grown up eating.
+                                </p>
+                                <a class="btn btn-primary card-button d-block m-auto">Read more</a>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-md-3" style="float: left">
-                            <div class="card">
-                                <img
-                                    class="card-img-top"
-                                    src="./images/tacos.png"
-                                    alt="Card image cap"
-                                />
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">
-                                        Dessert
-                                    </h4>
-                                    <p class="card-text text-justify">
-                                        Some quick example text to build on the
-                                        card title and make up the bulk of the
-                                        card's content.
-                                    </p>
-                                    <a href="index3.html"
-                                        class="btn btn-primary card-button d-block m-auto"
-                                        >Read more</a
-                                    >
-                                </div>
+                    <div class="col-md-3 m-b-xs" style="float: left">
+                        <div class="card mb-3">
+                            <img class="card-img-top" src="./images/dessert.png" alt="Card image cap" />
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    Dessert
+                                </h4>
+                                <p class="card-text text-justify">
+                                    Plant-based vegan dish recipes can be just
+                                    as ooey-gooey as the classics you may have grown up eating.
+                                </p>
+                                <a class="btn btn-primary card-button d-block m-auto">Read more</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <h3>Connect</h3>
-
-            <a href="https://www.pinterest.com/"
-                ><img src="images\rs1.png" alt="Pinterest"
-            /></a>
-            <a href="https://www.facebook.com/"
-                ><img src="images\rs2.png" alt="Facebook"
-            /></a>
-            <a href="https://twitter.com/?lang=en"
-                ><img src="images\rs3.png" alt="Twitter"
-            /></a>
-            <a href="https://www.instagram.com/"
-                ><img src="images\instagram-new.png" alt="Instagram"
-            /></a>
+    </div>
+    <!-- Subscription section -->
+    <section class="home-newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 newsletter-box">
+                    <div class="section-icon d-flex justify-content-center mb-3">
+                        <img src="./images/s3_small.png" alt="">
+                    </div>
+                    <div class="single">
+                        <h2>Never Miss a Recipe!</h2>
+                        <p>Subscribe your e-mail address and get to know about fresh stuff!</p>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <span class="input-group-btn">
+                                <button class="btn btn-theme" type="submit">Subscribe</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Scripts -->
-        <script
-            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+    </section>
+
+
+    <div class="footer">
+        <h3 class="footer-capture">Connect | Responsive Theme | All Rights Reserved.
+        </h3>
+
+        <a href="https://www.pinterest.com/"><img src="images\rs1.png" alt="Pinterest" /></a>
+        <a href="https://www.facebook.com/"><img src="images\rs2.png" alt="Facebook" /></a>
+        <a href="https://twitter.com/?lang=en"><img src="images\rs3.png" alt="Twitter" /></a>
+        <a href="https://www.instagram.com/"><img src="images/instagram-logo-icon.png" alt="Instagram" /></a>
+    </div>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

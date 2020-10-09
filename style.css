@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'HeyOctober';
+    src: url('./fonts/HeyOctober-Yz37y.ttf');
+    src: url('./fonts/HeyOctober-8M8oZ.otf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'CrimsonText';
+    src: url('./fonts/CrimsonText-Italic.ttf');
+    src: url('./fonts/CrimsonText-SemiBoldItalic.ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lancelot';
+    src: url('./fonts/Lancelot-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
 html {
     font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -5,12 +27,11 @@ html {
 
 .wrap {
     background-image: url('./images/bg.jpg');
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-bottom: 12rem;
     background-size: cover;
-    background-position: center center;
+    background-position: left center;
     position: relative;
-    background-color: rgba(255, 0, 0, 0.3);
 }
 
 .wrap-RP {
@@ -25,24 +46,40 @@ html {
 .footer {
     height: 100px;
     width: 100%;
-    background-color: #008120;
-    color: white;
+    background-color: #dff1d9;
+    color: black;
     text-align: center;
+    position: relative;
+    padding-top: 1.5rem;
+    -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+}
 
+.footer > a {
+    margin-right: 1rem;
+}
 
-  }
+.footer-capture {
+    font-size: 0.8rem;
+    color: #252627;
+    margin-bottom: 1rem;
+}
 
 .navbar-top {
-    font-family: Montserrat;
+    font-family: 'Lancelot';
     text-transform: uppercase;
     line-height: 24px;
     font-weight: 700;
-    font-style: normal;
-    color: #684f40 !important;
-    font-size: 1rem;
+    font-style: bolder;
+    font-size: 1.2rem;
     margin-top: 0.3rem;
     box-shadow: 0 4px 2px -2px grey;
     background-color: #dff1d9 !important;
+}
+
+.nav-color {
+    color: #22201f !important;
 }
 
 .search {
@@ -55,7 +92,7 @@ html {
 }
 
 .carousel-inner .carousel-item {
-    height: 600px;
+    height: 655px;
     background-size: cover;
     background-position: center center;
     background-color: rgba(0, 0, 0, 0.75) !important;
@@ -89,15 +126,104 @@ html {
         rgba(0, 0, 0, 0.1) -12px 12px 10px;
 }
 
+.carousel-text {
+    font-family: 'HeyOctober';
+    font-size: 6rem;
+}
+
+.card-title {
+    font-family: 'Lancelot';
+    font-style: bold;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
 .card-button {
     background-color: #ec6f78;
     border: 1px solid #ec6f78;
+    font-family: 'Lancelot';
+    font-size: 1.3rem;
 }
 
 .card-button:hover {
     background-color: white;
     color: #ec6f78;
     border: 1px solid #ec6f78;
+}
+
+.title-text {
+    font-family: 'CrimsonText';
+    font-size: 2.2rem !important;
+    letter-spacing: 0.5px;
+}
+
+/*Subscription Part*/
+.home-newsletter {
+    padding: 1rem 0 5rem 0;
+    background-image: url('./images/bg_recipes.png');
+    background-size: cover;
+    background-position: left center;
+    position: relative;
+}
+
+.home-newsletter .single {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.home-newsletter .single h2 {
+    font-family: 'CrimsonText';
+    font-size: 2.2rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.home-newsletter .single p {
+    font-family: 'CrimsonText';
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+.home-newsletter .single .form-control {
+    height: 50px;
+    background: rgba(255, 255, 255, 0.6);
+    border-color: transparent;
+    border-radius: 20px 0 0 20px;
+}
+
+.home-newsletter .single .form-control:focus {
+    box-shadow: none;
+    border-color: #ec6f78;
+}
+
+.home-newsletter .single .btn {
+    font-family: 'Lancelot';
+    font-size: 1.3rem;
+    min-height: 50px;
+    border-radius: 0 20px 20px 0;
+    background: #ec6f78;
+    color: #fff;
+}
+.newsletter-box {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5rem;
+}
+
+.sidebar {
+    position: absolute;
+    top: 17px;
+    right: 50px;
+}
+
+.sidebarSocial span {
+    font-size: 21px;
+    color: #404040;
+    padding-right: 18px;
+    text-align: right;
+    cursor: pointer;
 }
 .overlay {
   position: absolute;
@@ -115,10 +241,32 @@ top: 0;
 }
 .img-box:hover .overlay {
   opacity: 1;
+
 @media (max-width: 575px) {
     .carousel-inner .carousel-item {
         height: 250px;
         background-size: cover;
         background-position: center center;
+    }
+    .carousel-text {
+        font-family: 'HeyOctober';
+        font-size: 2rem;
+    }
+    .wrap {
+        padding-bottom: 3rem;
+        background-attachment: fixed;
+    }
+    .home-newsletter {
+        padding: 0 0 5rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrap {
+        padding-bottom: 2rem;
+        background-attachment: fixed;
+    }
+    .home-newsletter {
+        padding: 0 0 5rem 0;
     }
 }
