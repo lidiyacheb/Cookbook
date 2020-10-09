@@ -41,6 +41,8 @@ html {
     position: relative;
     background-color: rgba(255, 0, 0, 0.3);
     background-size: cover;
+    padding-bottom: 2rem;
+    margin-top: .2rem;
     }
 
 .footer {
